@@ -1,0 +1,102 @@
+:root{
+    --text-color: #000;
+    --bg-color: #ffffff;
+    --bgv-color: #000;
+    --texto-negro-blanco: #ffffff;
+    --bg-contain-text: #EEF1FF;
+    --gradient1: #EEF1FF;
+    --gradient2: #AAC4FF;
+    --transparent: #0000001b;
+    --cards-color:#ffffff;
+    --botones: #a550f5;
+    --packages:#a550f50e;
+    --gradient3: #EEF1FF;
+    --gradient4: #AAC4FF;
+  }
+  .theme-dark{
+    --text-color: #fff!important;
+    --bg-color: #141627!important;
+    --bgv-color: #D1F366;
+    --texto-negro-blanco: #000;
+    --bg-contain-text: #1a1c37;
+    --gradient1: #141627;
+    --gradient2: #141627;
+    --transparent: #ffffff11;
+    --cards-color:#262a47;
+    --botones: #D1F366;
+    --packages:#d2f36605;
+    --gradient3: #1a1c37;
+    --gradient4: #1a1c37;
+}
+  
+.contain-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-items: center;
+  place-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 50px 0%;
+  background-color: var(--gradient2);
+  padding-top: 130px;
+}
+
+.Footer-contain{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    place-content: center;
+    height: 100%;
+    width: 100%;
+    border-radius:50px ;
+    padding: 30px 0%;
+    gap: 5rem;
+   
+}
+
+.Footer-links a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--text-color)!important;
+    padding: 1px;
+}
+.Footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.Footer-links h4{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+
+.logo{
+    padding: 20px 0%;
+}
+.logo2{
+    padding: 20px 0%;
+}
+
+.redes-sociales-footer{
+    padding: 10px;
+    gap: 1rem;
+    display: flex;
+    font-size: 20px;
+}
+
+.world{
+    border-radius: 20px;
+    color: var(  --texto-negro-blanco);
+    font-size: 17px;
+    background-color: var( --botones);
+    padding: 7px 30px;
+}
+

@@ -1,0 +1,34 @@
+.userInfoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -3rem
+
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.userInfo span {
+    color: var(--botones);
+}
+
+.userInfo img {
+    width: 130px;
+    height: 130px;
+    border: 2px solid var(--bgv-color);
+    padding: 3px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.userInfo p {
+    color: var(--bgv-color);
+    font-size: 15px;
+    font-weight: 500;
+}

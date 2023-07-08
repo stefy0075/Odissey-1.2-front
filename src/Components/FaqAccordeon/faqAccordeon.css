@@ -1,0 +1,55 @@
+.Collapsible {
+    background-color: var(--bg-contain-text);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: var(--bgv-color);
+    font-size: 19px;
+    text-transform: capitalize;
+    box-shadow: 1px 2px 2px black;
+    padding: 1rem;
+    width: 100%;
+    cursor: pointer;
+}
+
+.Collapsible__triger{
+    padding-left: 10px;
+}
+
+.Collapsible__contentOuter {
+    background-color: var(--bg-contain-text);
+    color: var(--text-color);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.collapsibleConteiner {
+    padding: 20px;
+
+    height: 55vh;
+    margin-bottom: 100px;
+}
+
+.collapsibleText {
+    color: var(--bgv-color);
+    font-size: 17px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.collapsibleConteiner div {
+    padding: 1rem;
+    line-height: 25px;
+    
+}
+
+
+@media (max-width: 700px){
+    .Collapsible {
+      
+        font-size: 13px;
+        width: 90%;
+        cursor: pointer;
+    }
+    
+}

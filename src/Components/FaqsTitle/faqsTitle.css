@@ -1,0 +1,25 @@
+.titleSection {
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+
+}
+
+.titleFaqs{
+    text-align: center;
+    font-size: 40px;
+}
+
+@media (max-width: 1024px){
+    .titleFaqs{
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 700px){
+    .titleFaqs{
+        text-align: center;
+        font-size: 20px;
+    }
+}

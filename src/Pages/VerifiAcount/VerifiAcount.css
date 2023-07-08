@@ -1,0 +1,72 @@
+
+.containerGeneral {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../img/Carousel5.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 4rem;
+    min-height: 30vh;
+    width: 30%;
+    gap: 2rem;
+    background-color: var(--bg-color);
+    box-shadow:  25px 25px 50px #000000, -25px -25px 50px #191919;
+
+}
+
+#h1verify{
+    font-size: 28px;
+    text-align: center;
+    width: 80%;
+    margin: 0px;
+    color: var( var(--bgv-color));
+}
+
+.anchor{
+    border-radius: 20px;
+    color: var(  --texto-negro-blanco);
+    font-size: 17px;
+    background-color: var( --botones);
+    padding: 5px 30px;
+    text-decoration: none;
+    width: 7rem;
+    text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .content{
+       
+        min-height: 25vh;
+        width: 90%;
+    }
+    #h1verify{
+        font-size: 20px;
+        text-align: center;
+        width: 80%;
+        margin: 0px;
+        color: #000000;
+    }
+    .anchor{
+        border-radius: 20px;
+        color: var(  --texto-negro-blanco);
+        font-size: 17px;
+        padding: 5px 30px;
+        text-decoration: none;
+        width: 7rem;
+        text-align: center;
+    }
+}

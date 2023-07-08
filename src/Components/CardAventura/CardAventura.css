@@ -1,0 +1,62 @@
+.card-aventura-contain {
+    text-align: center;
+    background-color: var( --bg-contain-text);
+    padding-top: 100px;
+        background: linear-gradient(0deg,var(--gradient1) 0%, var(--gradient1) 100%);
+}
+.card-aventura-contain h4{
+    font-size: 30px;
+}
+.cards-contain{
+   height: 100%;
+    background-color: var( --bg-contain-text);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 10rem;
+    align-items: center;
+    text-align: center;
+    padding: 10% 10%;
+    place-content: center;
+    background: linear-gradient(0deg,var(--gradient2) 0%, var(--gradient1) 100%);
+}
+
+
+.card-aventura{
+    background-color: var( --cards-color);
+    width: 100%;
+    min-height: 100%;
+    border-radius: 7px;
+    box-shadow: 0 2px 2px #1a1e25;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25s;
+    text-align: left;
+    padding: 20px;
+}
+
+.card-aventura:hover {
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.7);
+    transition: all .40s ease;
+}
+
+.card-aventura h3{
+    font-size: 16px;
+}
+
+.card-aventura p{
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+@media (max-width: 450px){
+    .card-aventura{
+        width: 85%;
+    }
+    .card-aventura h3{
+        font-size: 16px;
+    }
+    .card-aventura-contain h4{
+        font-size: 20px;
+        padding: 0px 5%;
+    }
+}

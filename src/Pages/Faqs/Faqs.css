@@ -1,0 +1,24 @@
+.FaqsPages {
+    background-color: var(--bg-color);
+    background: linear-gradient(0deg,var(--gradient1) 0%, var(--gradient2) 100%);
+}
+
+.FaqsWelcome {
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: repeat(auto-fit, minmax(410px, 1vh));
+    gap: 10rem;
+    align-items: center;
+    align-content: center;
+    place-content: center;
+}
+@media (max-width: 1024px){
+    .FaqsWelcome {
+        grid-template-columns: repeat(auto-fit, minmax(310px, 1vh));
+
+    }
+}

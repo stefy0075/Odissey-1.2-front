@@ -1,0 +1,123 @@
+.contain-destinos-home{
+    margin: auto;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    display: grid;
+    grid-auto-rows: max-content;
+    grid-template-columns: repeat(auto-fit, minmax(510px, 3vh));
+    gap: 6rem;
+    background-color: var(--bg-color);
+    align-items: center;
+    align-content: center;
+    place-content: center;
+    justify-content: center;
+    padding: 100px 0%;
+    background: linear-gradient(0deg,var(--gradient1) 0%, var(--gradient2) 100%);
+}
+.home-destinos img{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.btn-detail-home{
+    border-radius: 20px;
+    font-size: 14px;
+    color: var(--bgv-color)!important;
+    padding: 4px 10px ;
+    text-decoration: none;
+    width: 7rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+.contain-destinos-home-text{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: left;
+}
+.contain-destinos-home-text p{
+    width: 100%;
+    font-size: 16px;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.contain-destinos-home a{
+    text-align: center;
+    width: 98%;
+}
+.contain-destinos-home h3{
+     font-size: 25px;
+}
+.destinos-contain-home{
+  min-height: 10vh;
+  background-color: var( --bg-contain-text);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  gap: 3rem;
+  align-items: center;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5% 7%;
+}
+
+.home-destinos h2{
+    font-size: 13px;
+}
+
+
+.home-destinos:hover{
+    
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
+    transition: all .40s ease;
+}
+
+.btn-more-home{
+    border-radius: 20px;
+    color: var(  --texto-negro-blanco);
+    font-size: 17px;
+    background-color: var( --botones);
+    padding: 5px 30px;
+    text-decoration: none;
+    width: 7rem!important;
+    text-align: center;
+}
+
+
+
+@media (max-width: 600px){
+
+    .contain-destinos-home{
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+        display: grid;
+        grid-auto-rows: max-content;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 3vh));
+        gap: 4rem;
+        background-color: var(--bg-color);
+        align-items: center;
+        align-content: center;
+        place-content: center;
+        justify-content: center;
+        padding: 100px 0%;
+    }
+    .contain-destinos-home-text{
+        width: 100%;
+    }
+
+    .contain-destinos-home-text p{
+        font-size: 14px;
+        width: 80%;
+    }
+   
+}
