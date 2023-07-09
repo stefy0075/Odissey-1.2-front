@@ -4,17 +4,17 @@ import { useRef, useEffect } from "react";
 import axios from 'axios'
 import { useDispatch } from "react-redux";
 import alertActions from "../../Store/Alert/actions";
-import { gapi } from "gapi-script";
-import { GoogleLogin } from "react-google-login";
-import toast from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
+// import { gapi } from "gapi-script";
+// import { GoogleLogin } from "react-google-login";
+// import toast from "react-hot-toast";
+// import { useNavigate } from "react-router-dom";
 
 
 const { open } = alertActions;
 
 
 export default function Register() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   let dispatch = useDispatch();
   let dataForm = useRef()
@@ -71,71 +71,71 @@ export default function Register() {
       dispatch(open(dataAlert));
     }
   }
-  const clientID =
-    "498726808406-87jruire70f962v3khp1j50g8du2ml5t.apps.googleusercontent.com";
+  // const clientID =
+  //   "498726808406-87jruire70f962v3khp1j50g8du2ml5t.apps.googleusercontent.com";
 
-  useEffect(() => {
-    const start = () => {
-      gapi.auth2.init({
-        clientId: clientID,
-      });
-    };
-    gapi.load("client:auth2", start);
-  }, []);
+  // useEffect(() => {
+  //   const start = () => {
+  //     gapi.auth2.init({
+  //       clientId: clientID,
+  //     });
+  //   };
+  //   gapi.load("client:auth2", start);
+  // }, []);
 
-  const onSuccess = async (response) => {
-    console.log(response);
-    try {
-      const { name, email, imageUrl, googleId } = response.profileObj;
+  // const onSuccess = async (response) => {
+  //   console.log(response);
+  //   try {
+  //     const { name, email, imageUrl, googleId } = response.profileObj;
 
-      const data = {
-        name: name,
-        mail: email,
-        photo: imageUrl,
-        password: googleId,
-      };
-      console.log(data.name);
-      const url = "http://localhost:8080/users/signup";
-      await axios.post(url, data);
-      let dataAlert = {
-        icon: "success",
-        title: "Register Successful, check your email to verify your account",
-        type: "toast"
-      };
-      dispatch(open(dataAlert));
-      dataForm.current.reset();
-      navigate("/");
-    } catch (error) {
-      console.error(error);
-      let errorMessage = "";
-      if (
-        error.response &&
-        error.response.data &&
-        error.response.data.message
-      ) {
-        if (typeof error.response.data.message === "string") {
-          errorMessage = error.response.data.message;
-        } else {
-          errorMessage = error.response.data.message.join(" ");
-        }
-      } else {
-        errorMessage = "Se produjo un error al procesar la solicitud.";
-      }
-      console.log(errorMessage);
+  //     const data = {
+  //       name: name,
+  //       mail: email,
+  //       photo: imageUrl,
+  //       password: googleId,
+  //     };
+  //     console.log(data.name);
+  //     const url = "http://localhost:8080/users/signup";
+  //     await axios.post(url, data);
+  //     let dataAlert = {
+  //       icon: "success",
+  //       title: "Register Successful, check your email to verify your account",
+  //       type: "toast"
+  //     };
+  //     dispatch(open(dataAlert));
+  //     dataForm.current.reset();
+  //     navigate("/");
+  //   } catch (error) {
+  //     console.error(error);
+  //     let errorMessage = "";
+  //     if (
+  //       error.response &&
+  //       error.response.data &&
+  //       error.response.data.message
+  //     ) {
+  //       if (typeof error.response.data.message === "string") {
+  //         errorMessage = error.response.data.message;
+  //       } else {
+  //         errorMessage = error.response.data.message.join(" ");
+  //       }
+  //     } else {
+  //       errorMessage = "Se produjo un error al procesar la solicitud.";
+  //     }
+  //     console.log(errorMessage);
 
-      let dataAlert = {
-        icon: "error",
-        title: "Error, please register and verify your user",
-        text: errorMessage,
-        type: "toast",
-      };
-      dispatch(open(dataAlert));
-    }
-  };
+  //     let dataAlert = {
+  //       icon: "error",
+  //       title: "Error, please register and verify your user",
+  //       text: errorMessage,
+  //       type: "toast",
+  //     };
+  //     dispatch(open(dataAlert));
+  //   }
+  // };
 
-  const onFailure = () => {
-    console.log("Something went wrong");
-  };
+  // const onFailure = () => {
+  //   console.log("Something went wrong");
+  // };
 
 
   return (
@@ -153,7 +153,7 @@ export default function Register() {
         <div className='enviar'>
           <input type='submit'></input>
         </div>
-        <GoogleLogin
+        {/* <GoogleLogin
           className="google"
           image="./google.png"
           text="Sign in with Google"
@@ -161,7 +161,7 @@ export default function Register() {
           onSuccess={onSuccess}
           onFailure={onFailure}
           cookiePolicy={"sigle_host_policy"}
-        />
+        /> */}
 
       </form>
     </div>
